@@ -1,0 +1,1475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1048</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget, #win{
+	background-color: rgb(18, 18, 18);
+}
+
+#navbar{
+	border-right: 1px solid #2A2A2A;
+}
+
+#sidebar{
+	border-bottom: 1px solid #2A2A2A;
+}
+
+#close{
+	
+	background-color: #e62e4c;
+	border: none;
+	color: white;
+	padding: 20px
+}
+</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="win" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="main" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="navbar" native="true">
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QWidget" name="topContent" native="true">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>300</height>
+                </size>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <widget class="QWidget" name="widget_5" native="true">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>200</height>
+                   </size>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_7">
+                   <item>
+                    <widget class="QLabel" name="label">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">color:white</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>../icon.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="widget_6" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>140</height>
+                   </size>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_8">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QWidget" name="btnGroup" native="true">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>60</height>
+                      </size>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">#btnGroup{
+	background-color: rgba(255, 255, 255, 0.02);
+	border-radius: 5px;
+}
+
+#btnGroup::hover{
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 5px;
+}
+
+
+</string>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_4">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <item>
+                       <widget class="QPushButton" name="pushButton">
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset>
+                          <normaloff>static/icons/cpu.svg</normaloff>static/icons/cpu.svg</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>25</width>
+                          <height>25</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="compte">
+                        <property name="font">
+                         <font>
+                          <pointsize>10</pointsize>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgba(255, 255, 255, 0);
+color:white;
+padding: 15px;</string>
+                        </property>
+                        <property name="text">
+                         <string>Dashboard</string>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>20</width>
+                          <height>60</height>
+                         </size>
+                        </property>
+                        <property name="checkable">
+                         <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QWidget" name="btnGroup_3" native="true">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>60</height>
+                      </size>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">#btnGroup_3{
+	background-color: rgba(255, 255, 255, 0.02);
+	border-radius: 5px;
+}
+
+#btnGroup_3::hover{
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 5px;
+}
+
+
+</string>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_7">
+                      <item>
+                       <widget class="QPushButton" name="pushButton_10">
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset>
+                          <normaloff>static/icons/tag.svg</normaloff>static/icons/tag.svg</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>25</width>
+                          <height>25</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="dossier">
+                        <property name="font">
+                         <font>
+                          <pointsize>10</pointsize>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgba(255, 255, 255, 0);
+color:white;
+padding: 15px;</string>
+                        </property>
+                        <property name="text">
+                         <string>Vos dossier</string>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>20</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                        <property name="checkable">
+                         <bool>false</bool>
+                        </property>
+                        <property name="flat">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignBottom">
+              <widget class="QWidget" name="options" native="true">
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <widget class="QWidget" name="btnGroup_5" native="true">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">#btnGroup_5{
+	background-color: rgba(255, 255, 255, 0.02);
+	border-radius: 5px;
+}
+
+#btnGroup_5::hover{
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 5px;
+}
+
+
+</string>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_9">
+                   <item>
+                    <widget class="QPushButton" name="pushButton_14">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>static/icons/download-cloud.svg</normaloff>static/icons/download-cloud.svg</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>25</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="offline">
+                     <property name="font">
+                      <font>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgba(255, 255, 255, 0);
+color:white;
+padding: 15px;</string>
+                     </property>
+                     <property name="text">
+                      <string>offline</string>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>false</bool>
+                     </property>
+                     <property name="flat">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="btnGroup_4" native="true">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">#btnGroup_4{
+	background-color: rgba(255, 255, 255, 0.02);
+	border-radius: 5px;
+}
+
+#btnGroup_4::hover{
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 5px;
+}
+
+
+</string>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_8">
+                   <item>
+                    <widget class="QPushButton" name="pushButton_12">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>static/icons/settings.svg</normaloff>static/icons/settings.svg</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>25</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="settings">
+                     <property name="font">
+                      <font>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgba(255, 255, 255, 0);
+color:white;
+padding: 15px;</string>
+                     </property>
+                     <property name="text">
+                      <string>Settings</string>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>false</bool>
+                     </property>
+                     <property name="flat">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="rightContent" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QWidget" name="sidebar" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item alignment="Qt::AlignLeft">
+                 <widget class="QWidget" name="widget" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="0">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="title">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>50</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background: rgba(255, 255, 255, 0.1);
+border: none;
+padding: 20px;
+color: white;
+border-bottom: 4px solid #dea309;</string>
+                     </property>
+                     <property name="text">
+                      <string>Home</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignRight">
+                 <widget class="QWidget" name="widget_2" native="true">
+                  <layout class="QHBoxLayout" name="horizontalLayout_12">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>10</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QWidget" name="btnGroup_6" native="true">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>60</height>
+                      </size>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">#btnGroup_3{
+	background-color: rgba(255, 255, 255, 0.02);
+	border-radius: 5px;
+}
+
+#btnGroup_3::hover{
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 5px;
+}
+
+
+</string>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_11">
+                      <property name="spacing">
+                       <number>2</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item>
+                       <widget class="QPushButton" name="pushButton_16">
+                        <property name="minimumSize">
+                         <size>
+                          <width>120</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>10</pointsize>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: #dea309;
+border: none;
+border-radius: 5px;
+color: white;</string>
+                        </property>
+                        <property name="text">
+                         <string>idrisscoder</string>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>25</width>
+                          <height>25</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="content" native="true">
+               <widget class="QStackedWidget" name="pages">
+                <property name="geometry">
+                 <rect>
+                  <x>11</x>
+                  <y>44</y>
+                  <width>821</width>
+                  <height>400</height>
+                 </rect>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>400</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(18, 18, 18);</string>
+                </property>
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="compteView">
+                 <layout class="QVBoxLayout" name="verticalLayout_10">
+                  <item>
+                   <widget class="QWidget" name="widget_3" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">color:white;</string>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_13">
+                     <item>
+                      <widget class="QWidget" name="widget_4" native="true">
+                       <widget class="QLabel" name="label_2">
+                        <property name="geometry">
+                         <rect>
+                          <x>390</x>
+                          <y>9</y>
+                          <width>16</width>
+                          <height>16</height>
+                         </rect>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>500</width>
+                          <height>500</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap>../../../unreaLogo.PNG</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                       <widget class="QWidget" name="folderWidget_3" native="true">
+                        <property name="geometry">
+                         <rect>
+                          <x>30</x>
+                          <y>20</y>
+                          <width>771</width>
+                          <height>91</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">#folderWidget_2{
+	background-color: rgba(255, 255, 255, 0.02);
+	border-radius: 15px;
+}
+
+#folderWidget_2::hover{
+	background-color: rgba(255, 255, 255, 0.05);
+}</string>
+                        </property>
+                        <widget class="QWidget" name="widget_13" native="true">
+                         <property name="geometry">
+                          <rect>
+                           <x>0</x>
+                           <y>0</y>
+                           <width>131</width>
+                           <height>101</height>
+                          </rect>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(18, 18, 18, 0.8);</string>
+                         </property>
+                         <widget class="QLabel" name="label_9">
+                          <property name="geometry">
+                           <rect>
+                            <x>20</x>
+                            <y>10</y>
+                            <width>81</width>
+                            <height>81</height>
+                           </rect>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                          <property name="pixmap">
+                           <pixmap>static/icons/user.svg</pixmap>
+                          </property>
+                          <property name="scaledContents">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </widget>
+                        <widget class="QWidget" name="widget_14" native="true">
+                         <property name="geometry">
+                          <rect>
+                           <x>150</x>
+                           <y>9</y>
+                           <width>481</width>
+                           <height>81</height>
+                          </rect>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: none;</string>
+                         </property>
+                         <widget class="QLabel" name="username">
+                          <property name="geometry">
+                           <rect>
+                            <x>0</x>
+                            <y>10</y>
+                            <width>551</width>
+                            <height>21</height>
+                           </rect>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(255, 255, 255);</string>
+                          </property>
+                          <property name="text">
+                           <string>idriss hacker</string>
+                          </property>
+                         </widget>
+                         <widget class="QLabel" name="email">
+                          <property name="geometry">
+                           <rect>
+                            <x>0</x>
+                            <y>40</y>
+                            <width>551</width>
+                            <height>21</height>
+                           </rect>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>10</pointsize>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(218, 218, 218);</string>
+                          </property>
+                          <property name="text">
+                           <string>idrisscoder@gmail.com</string>
+                          </property>
+                         </widget>
+                        </widget>
+                        <widget class="QWidget" name="widget_15" native="true">
+                         <property name="geometry">
+                          <rect>
+                           <x>680</x>
+                           <y>20</y>
+                           <width>81</width>
+                           <height>61</height>
+                          </rect>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: none;</string>
+                         </property>
+                        </widget>
+                       </widget>
+                       <widget class="QWidget" name="folderWidget_4" native="true">
+                        <property name="geometry">
+                         <rect>
+                          <x>40</x>
+                          <y>140</y>
+                          <width>771</width>
+                          <height>91</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">#folderWidget_2{
+	background-color: rgba(255, 255, 255, 0.02);
+	border-radius: 15px;
+}
+
+#folderWidget_2::hover{
+	background-color: rgba(255, 255, 255, 0.05);
+}</string>
+                        </property>
+                        <widget class="QWidget" name="widget_16" native="true">
+                         <property name="geometry">
+                          <rect>
+                           <x>0</x>
+                           <y>0</y>
+                           <width>131</width>
+                           <height>101</height>
+                          </rect>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(18, 18, 18, 0.8);</string>
+                         </property>
+                         <widget class="QLabel" name="label_12">
+                          <property name="geometry">
+                           <rect>
+                            <x>10</x>
+                            <y>10</y>
+                            <width>81</width>
+                            <height>81</height>
+                           </rect>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                          <property name="pixmap">
+                           <pixmap>static/icons/hard-drive.svg</pixmap>
+                          </property>
+                          <property name="scaledContents">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </widget>
+                        <widget class="QWidget" name="widget_17" native="true">
+                         <property name="geometry">
+                          <rect>
+                           <x>150</x>
+                           <y>9</y>
+                           <width>481</width>
+                           <height>81</height>
+                          </rect>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: none;</string>
+                         </property>
+                         <widget class="QLabel" name="label_13">
+                          <property name="geometry">
+                           <rect>
+                            <x>0</x>
+                            <y>10</y>
+                            <width>551</width>
+                            <height>21</height>
+                           </rect>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(255, 255, 255);</string>
+                          </property>
+                          <property name="text">
+                           <string>Espace disponible</string>
+                          </property>
+                         </widget>
+                         <widget class="QLabel" name="freeSpace">
+                          <property name="geometry">
+                           <rect>
+                            <x>0</x>
+                            <y>40</y>
+                            <width>551</width>
+                            <height>21</height>
+                           </rect>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>10</pointsize>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(218, 218, 218);</string>
+                          </property>
+                          <property name="text">
+                           <string>20 GO</string>
+                          </property>
+                         </widget>
+                        </widget>
+                        <widget class="QWidget" name="widget_18" native="true">
+                         <property name="geometry">
+                          <rect>
+                           <x>680</x>
+                           <y>20</y>
+                           <width>81</width>
+                           <height>61</height>
+                          </rect>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: none;</string>
+                         </property>
+                        </widget>
+                       </widget>
+                       <widget class="QWidget" name="folderWidget_5" native="true">
+                        <property name="geometry">
+                         <rect>
+                          <x>30</x>
+                          <y>250</y>
+                          <width>771</width>
+                          <height>91</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">#folderWidget_2{
+	background-color: rgba(255, 255, 255, 0.02);
+	border-radius: 15px;
+}
+
+#folderWidget_2::hover{
+	background-color: rgba(255, 255, 255, 0.05);
+}</string>
+                        </property>
+                        <widget class="QWidget" name="widget_19" native="true">
+                         <property name="geometry">
+                          <rect>
+                           <x>0</x>
+                           <y>0</y>
+                           <width>131</width>
+                           <height>101</height>
+                          </rect>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(18, 18, 18, 0.8);</string>
+                         </property>
+                         <widget class="QLabel" name="label_15">
+                          <property name="geometry">
+                           <rect>
+                            <x>20</x>
+                            <y>10</y>
+                            <width>81</width>
+                            <height>81</height>
+                           </rect>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                          <property name="pixmap">
+                           <pixmap>static/icons/server.svg</pixmap>
+                          </property>
+                          <property name="scaledContents">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                        </widget>
+                        <widget class="QWidget" name="widget_20" native="true">
+                         <property name="geometry">
+                          <rect>
+                           <x>150</x>
+                           <y>9</y>
+                           <width>481</width>
+                           <height>81</height>
+                          </rect>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: none;</string>
+                         </property>
+                         <widget class="QLabel" name="label_16">
+                          <property name="geometry">
+                           <rect>
+                            <x>0</x>
+                            <y>10</y>
+                            <width>551</width>
+                            <height>21</height>
+                           </rect>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(255, 255, 255);</string>
+                          </property>
+                          <property name="text">
+                           <string>Derniere synchronisation</string>
+                          </property>
+                         </widget>
+                         <widget class="QLabel" name="lastSynchro">
+                          <property name="geometry">
+                           <rect>
+                            <x>0</x>
+                            <y>40</y>
+                            <width>551</width>
+                            <height>21</height>
+                           </rect>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>10</pointsize>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(218, 218, 218);</string>
+                          </property>
+                          <property name="text">
+                           <string>il y'a 30 min</string>
+                          </property>
+                         </widget>
+                        </widget>
+                        <widget class="QWidget" name="widget_21" native="true">
+                         <property name="geometry">
+                          <rect>
+                           <x>680</x>
+                           <y>20</y>
+                           <width>81</width>
+                           <height>61</height>
+                          </rect>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: none;</string>
+                         </property>
+                        </widget>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="dossierView">
+                 <widget class="QWidget" name="folderWidget" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>30</x>
+                    <y>20</y>
+                    <width>771</width>
+                    <height>91</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">#folderWidget{
+	background-color: rgba(255, 255, 255, 0.02);
+	border-radius: 15px;
+}
+
+#folderWidget::hover{
+	background-color: rgba(255, 255, 255, 0.05);
+}</string>
+                  </property>
+                  <widget class="QWidget" name="widget_7" native="true">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>131</width>
+                     <height>101</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(18, 18, 18, 0.8);</string>
+                   </property>
+                   <widget class="QLabel" name="label_3">
+                    <property name="geometry">
+                     <rect>
+                      <x>20</x>
+                      <y>10</y>
+                      <width>81</width>
+                      <height>81</height>
+                     </rect>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="pixmap">
+                     <pixmap>static/icons/cloud-lightning.svg</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </widget>
+                  <widget class="QWidget" name="widget_8" native="true">
+                   <property name="geometry">
+                    <rect>
+                     <x>150</x>
+                     <y>9</y>
+                     <width>481</width>
+                     <height>81</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: none;</string>
+                   </property>
+                   <widget class="QLabel" name="label_4">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>10</y>
+                      <width>551</width>
+                      <height>21</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>TrueCafe Data</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_5">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>40</y>
+                      <width>551</width>
+                      <height>21</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(218, 218, 218);</string>
+                    </property>
+                    <property name="text">
+                     <string>C:/users/TrueCafe Data</string>
+                    </property>
+                   </widget>
+                  </widget>
+                  <widget class="QWidget" name="widget_9" native="true">
+                   <property name="geometry">
+                    <rect>
+                     <x>680</x>
+                     <y>20</y>
+                     <width>81</width>
+                     <height>61</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: none;</string>
+                   </property>
+                   <widget class="QPushButton" name="download">
+                    <property name="geometry">
+                     <rect>
+                      <x>9</x>
+                      <y>0</y>
+                      <width>61</width>
+                      <height>50</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>10</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">#download{
+	background-color: rgb(19, 19, 19);
+	color:white;
+	padding: 15px;
+	border: none;
+	border-radius: 5px
+}
+
+#download:hover{
+	background-color: rgb(18, 18, 18);
+}
+</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset>
+                      <normaloff>static/icons/download.svg</normaloff>static/icons/download.svg</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>40</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="checkable">
+                     <bool>false</bool>
+                    </property>
+                    <property name="flat">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </widget>
+                 </widget>
+                </widget>
+                <widget class="QWidget" name="offlineView">
+                 <widget class="QWidget" name="folderWidget_2" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>20</y>
+                    <width>771</width>
+                    <height>91</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">#folderWidget_2{
+	background-color: rgba(255, 255, 255, 0.02);
+	border-radius: 15px;
+}
+
+#folderWidget_2::hover{
+	background-color: rgba(255, 255, 255, 0.05);
+}</string>
+                  </property>
+                  <widget class="QWidget" name="widget_10" native="true">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>131</width>
+                     <height>101</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(18, 18, 18, 0.8);</string>
+                   </property>
+                   <widget class="QLabel" name="label_6">
+                    <property name="geometry">
+                     <rect>
+                      <x>20</x>
+                      <y>10</y>
+                      <width>81</width>
+                      <height>81</height>
+                     </rect>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="pixmap">
+                     <pixmap>static/icons/folder.svg</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </widget>
+                  <widget class="QWidget" name="widget_11" native="true">
+                   <property name="geometry">
+                    <rect>
+                     <x>150</x>
+                     <y>9</y>
+                     <width>481</width>
+                     <height>81</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: none;</string>
+                   </property>
+                   <widget class="QLabel" name="label_7">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>10</y>
+                      <width>551</width>
+                      <height>21</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>TrueCafe Data</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_8">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>40</y>
+                      <width>551</width>
+                      <height>21</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(218, 218, 218);</string>
+                    </property>
+                    <property name="text">
+                     <string>C:/users/TrueCafe Data</string>
+                    </property>
+                   </widget>
+                  </widget>
+                  <widget class="QWidget" name="widget_12" native="true">
+                   <property name="geometry">
+                    <rect>
+                     <x>680</x>
+                     <y>20</y>
+                     <width>81</width>
+                     <height>61</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: none;</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </widget>
+                <widget class="QWidget" name="settingsView">
+                 <widget class="QLabel" name="label_10">
+                  <property name="geometry">
+                   <rect>
+                    <x>160</x>
+                    <y>110</y>
+                    <width>531</width>
+                    <height>111</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>24</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>Aucune mise à jour logiciel disponible</string>
+                  </property>
+                 </widget>
+                </widget>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
